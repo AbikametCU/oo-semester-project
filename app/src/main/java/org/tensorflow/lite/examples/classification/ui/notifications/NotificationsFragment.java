@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,18 +26,18 @@ public class NotificationsFragment extends Fragment {
         notificationsViewModel =
                 new ViewModelProvider(this).get(NotificationsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
+        // Inspiration for this code segment from the following resources:
+            // https://stackoverflow.com/questions/15478105/start-an-activity-from-a-fragment
+            // https://developer.android.com/guide/topics/ui/controls/button
+        Button button = (Button) root.findViewById(R.id.button_classify);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ClassifierActivity.class);
+                startActivity(intent);
             }
         });
-        return root;
-    }
 
-    public void classifyButton(View view){
-        Intent intent = new Intent(this.getActivity(), ClassifierActivity.class);
-        startActivity(intent);
+        return root;
     }
 }

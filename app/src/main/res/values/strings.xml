@@ -20,5 +20,5 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Mask</string>
-    <string name="button_classify">Mask?</string>
+    <string name="button_classify">Are you wearing your mask today?</string>
 </resources>
