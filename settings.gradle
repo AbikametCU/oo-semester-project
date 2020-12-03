@@ -1,2 +1,2 @@
-include ':app'
-rootProject.name = "Norona"
+rootProject.name = 'Norona'
+include ':app', ':lib_support', ':lib_task_api', ':models'
