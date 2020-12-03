@@ -25,6 +25,9 @@ import android.util.Log;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
+
+import com.example.norona.ClassifierActivity;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;

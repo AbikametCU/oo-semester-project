@@ -48,7 +48,8 @@ public abstract class Classifier {
     FLOAT_MOBILENET,
     QUANTIZED_MOBILENET,
     FLOAT_EFFICIENTNET,
-    QUANTIZED_EFFICIENTNET
+    QUANTIZED_EFFICIENTNET,
+    FLOAT_MOBILENET_MASK_DETECTOR
   }
 
   /** The runtime device type used for executing classification. */
@@ -59,7 +60,7 @@ public abstract class Classifier {
   }
 
   /** Number of results to show in the UI. */
-  private static final int MAX_RESULTS = 3;
+  private static int MAX_RESULTS = 3;
 
   /** Image size along the x axis. */
   private final int imageSizeX;
@@ -88,6 +89,8 @@ public abstract class Classifier {
       return new ClassifierFloatEfficientNet(activity, device, numThreads);
     } else if (model == Model.QUANTIZED_EFFICIENTNET) {
       return new ClassifierQuantizedEfficientNet(activity, device, numThreads);
+    } else if (model == Model.FLOAT_MOBILENET_MASK_DETECTOR) {
+      return new ClassifierMaskDetector(activity, device, numThreads);
     } else {
       throw new UnsupportedOperationException();
     }
