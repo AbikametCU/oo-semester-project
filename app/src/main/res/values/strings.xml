@@ -22,4 +22,13 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Mask</string>
     <string name="button_classify">Are you wearing your mask today?</string>
+    <string name="question">Do you currently have any of the following COVID-19 symptoms not typical for now?</string>
+    <string name="symptom_fever">fever</string>
+    <string name="symptom_cough">cough</string>
+    <string name="symptom_headache">headache</string>
+    <string name="questionnaire_submit">Get Result!</string>
+    <string name="title_questionnaire">Questionnaire</string>
+    <string name="symptom_shortbreath">"Shortness of breath of breathing difficulty "</string>
+    <string name="symptom_fatique">Fatique</string>
+    <string name="symptom_chills">"Chills "</string>
 </resources>
