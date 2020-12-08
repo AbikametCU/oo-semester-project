@@ -12,3 +12,6 @@ To run code:
 3. Update Gradle <br>
 4. Build App <br>
 5. Run on phone via usb or emulator <br>
+
+
+Demo Video Link: https://drive.google.com/file/d/1PfnqeQA-5e6I5wyLRhVg5SuISQi9taTI/view?usp=sharing
