@@ -52,8 +52,7 @@ public class DashboardFragment extends Fragment {
         return root;
     }
 
-    public void preDiagnose()
-    {
+    public void preDiagnose() {
         ArrayList<CheckBox> checkBoxArrayList = new ArrayList<CheckBox>();
 
         TextView covidResult = (TextView)getView().findViewById(R.id.covid_result);

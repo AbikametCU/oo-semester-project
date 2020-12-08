@@ -22,4 +22,15 @@
         android:name="com.example.norona.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_guidelines"
+        android:name="com.example.norona.ui.covidGuideline.CovidGuideline"
+        android:label="@string/title_guidelines"
+        tools:layout="@layout/fragment_guidelines"
+        tools:ignore="DuplicateIds" />
+
+
+
+
 </navigation>

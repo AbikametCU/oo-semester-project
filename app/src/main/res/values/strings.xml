@@ -31,4 +31,5 @@
     <string name="symptom_shortbreath">"Shortness of breath of breathing difficulty "</string>
     <string name="symptom_fatique">Fatique</string>
     <string name="symptom_chills">"Chills "</string>
+    <string name="title_guidelines">"Info "</string>
 </resources>

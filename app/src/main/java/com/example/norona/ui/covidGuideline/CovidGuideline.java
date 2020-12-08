@@ -25,7 +25,7 @@ public class CovidGuideline extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.covid_guideline_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_guidelines, container, false);
     }
 
     @Override

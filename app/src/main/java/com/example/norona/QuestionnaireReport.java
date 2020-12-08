@@ -14,5 +14,4 @@ public class QuestionnaireReport {
         this.symptomArrayList = symptomArrayList;
     }
 
-
 }
