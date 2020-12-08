@@ -16,7 +16,8 @@
         android:label="@string/tfe_ic_app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Norona">
+        android:theme="@style/Theme.Norona"
+        android:name="com.example.norona.App">
         <activity
             android:name="com.example.norona.MainActivity"
             android:label="@string/title_activity_main">
