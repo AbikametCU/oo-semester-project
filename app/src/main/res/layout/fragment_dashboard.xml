@@ -15,8 +15,79 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:gravity="left"
+        android:text="@string/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/symptom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/question"
+        android:text="@string/symptom_fever"/>
+
+    <CheckBox
+        android:id="@+id/symptom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/symptom1"
+        android:text="@string/symptom_cough"/>
+
+    <CheckBox
+        android:id="@+id/symptom3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/symptom2"
+        android:text="@string/symptom_headache"/>
+
+    <CheckBox
+        android:id="@+id/symptom4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/symptom3"
+        android:text="@string/symptom_shortbreath"/>
+
+    <CheckBox
+        android:id="@+id/symptom5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/symptom4"
+        android:text="@string/symptom_fatique"/>
+
+    <CheckBox
+        android:id="@+id/symptom6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/symptom5"
+        android:text="@string/symptom_chills"/>
+
+    <Button
+        android:id="@+id/button_questionnaire_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/symptom6"
+        android:text="@string/questionnaire_submit"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/covid_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/button_questionnaire_submit"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
