@@ -28,6 +28,7 @@ public class MaskDetectorActivity extends ClassifierActivity{
     protected int numThreads = -1;
     private static final Logger LOGGER = new Logger();
 
+    // Implementation derived from ClassifierActivity
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         LOGGER.d("onCreate " + this);
@@ -96,28 +97,10 @@ public class MaskDetectorActivity extends ClassifierActivity{
 
         recognitionTextView = findViewById(R.id.detected_item);
         recognitionValueTextView = findViewById(R.id.detected_item_value);
-//        recognition1TextView = findViewById(R.id.detected_item1);
-//        recognition1ValueTextView = findViewById(R.id.detected_item1_value);
-//        recognition2TextView = findViewById(R.id.detected_item2);
-//        recognition2ValueTextView = findViewById(R.id.detected_item2_value);
-//
-//        frameValueTextView = findViewById(R.id.frame_info);
-//        cropValueTextView = findViewById(R.id.crop_info);
-//        cameraResolutionTextView = findViewById(R.id.view_info);
-//        rotationTextView = findViewById(R.id.rotation_info);
-//        inferenceTimeTextView = findViewById(R.id.inference_info);
 
-//        modelSpinner.setOnItemSelectedListener(this);
-//        deviceSpinner.setOnItemSelectedListener(this);
-//
-//        plusImageView.setOnClickListener(this);
-//        minusImageView.setOnClickListener(this);
-
-//        model = Classifier.Model.valueOf("FLOAT_MOBILENET_MASK_DETECTOR");
-//        device = Classifier.Device.valueOf(deviceSpinner.getSelectedItem().toString());
-//        numThreads = Integer.parseInt(threadsTextView.getText().toString().trim());
     }
 
+    // Chooses the camera to use during classification. Implementation hints from ClassifierActivity
     @Override
     public String chooseCamera() {
         final CameraManager manager = (CameraManager) getSystemService(Context.CAMERA_SERVICE);
@@ -157,6 +140,7 @@ public class MaskDetectorActivity extends ClassifierActivity{
         return null;
     }
 
+    // Displays classification results. Implementation hints from ClassifierActivity
     @UiThread
     @Override
     protected void showResultsInBottomSheet(List<Classifier.Recognition> results) {
